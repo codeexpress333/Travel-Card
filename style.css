@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f3550;
+}
+
+.container {
+    min-height: 400px;
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .right {
+    line-height: 1.5;
+    margin: 0 10px;
+}
+
+.container .right div {
+    height: 200px;
+    width: 400px;
+    background: #4265e2;
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.container .right div .main-icon {
+    float: right;
+    margin: -70px 0px;
+    cursor: pointer;
+}
+
+.container .right div:first-child {
+    margin: 5px 0px;
+}
+
+.container .right div h2, p, a {
+    color: #fff;
+    margin: 5px 0px;
+}
+
+.container .left {
+    height: 400px;
+    width: 400px;
+    background: #4265e2;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.container .left img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.container .left h2 {
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.container .left p {
+    color: #ccc;
+    margin: 10px 0px;
+}
+
+.container .left button {
+    height: 40px;
+    width: 150px;
+    background: #6383f5;
+    border: 0;
+    outline: none;
+    color: #fff;
+    box-shadow: 2px 2px 12px #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+        margin: 20px 0px;
+    }
+}
+
